@@ -32,7 +32,6 @@ const TodoItem = ({
             checked={completed}
             onChange={() => {
               toggleTodo(id);
-              alert(id);
             }}
           />
           <p style={!completed ? text : strikeText} onDoubleClick={handleEdit}>
@@ -75,10 +74,9 @@ const x = {
   height: 30,
   borderRadius: 15,
   backgroundColor: "#d0e2d6",
-  transition: "all 0.3s ease-in-out",
+  transition: "all 0.3s ease-in",
 };
 const xLeave = {
-  fontSize: "20px",
   color: "red",
   cursor: "pointer",
   display: "none",
