@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
+}
+.app {
+  background-color: #f1f2f5;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  height: 50px;
+}
+
+.git_btn {
+  height: 30px;
+  padding: 20px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input_section {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding-inline: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px;
+  margin-inline: 10px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 50px 0 20px;
+}
+
+.todo_item {
+  width: 100%;
+  height: 30px;
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 786px) {
+  nav,
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
