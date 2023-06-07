@@ -46,7 +46,7 @@ const TodoItem = ({
             removeTodo(id);
           }}
         >
-          <FaTrash size={20} color="red" />
+          <FaTrash size={18} color="red" />
         </div>
       </div>
     </div>
@@ -68,9 +68,14 @@ const strikeText = {
   fontWeight: "300",
 };
 const x = {
-  fontSize: "20px",
-  color: "red",
-  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: 30,
+  height: 30,
+  borderRadius: 15,
+  backgroundColor: "#d0e2d6",
+  transition: "all 0.3s ease-in-out",
 };
 const xLeave = {
   fontSize: "20px",
